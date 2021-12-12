@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/src/style.css">
+    </head>
+    <body>
+        <div class="flex flex-col justify-center items-center">
+            <div>
+              <div class="text-6xl font-bold text-center m-5 flex justify-center space-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-cloud-haze2-fill text-green-700" viewBox="0 0 16 16">
+                  <path d="M8.5 2a5.001 5.001 0 0 1 4.905 4.027A3 3 0 0 1 13 12H3.5A3.5 3.5 0 0 1 .035 9H5.5a.5.5 0 0 0 0-1H.035a3.5 3.5 0 0 1 3.871-2.977A5.001 5.001 0 0 1 8.5 2zm-6 8a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zM0 13.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <h1>Weatherly</h1>
+              </div>
+            </div>
+            <div class="translate-y-4 flex flex-row-reverse p-3 translate-x-7">
+              <button id="go" class="bg-black text-white text-sm p-2 rounded">GO</button>
+              </svg>
+              <input id="city-input" type="text" placeholder="Type City" class="placeholder-gray-700 ring text-center rounded ring-black mr-2">
+            </div>
+            <div class=" w-2/3 h-56 m-10 rounded shadow-md border flex flex-col justify-center overflow-hidden">
+              <span id="city-value" class="text-3xl font-semibold text-center my-2">Juba</span> <!--city.name-->
+              <div class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" fill="currentColor" class="bi bi-brightness-low-fill text-orange-400" viewBox="0 0 16 16">
+                  <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8.5 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z"/>
+                </svg>
+                <div class="flex flex-col items-center">
+                  <span id="con" class="text-center text-4xl font-semibold">Sunny</span> <!--condition-->
+                  <span id="degrees" class="text-2xl font-bold text-gray-700">35˚C</span> <!--degrees-->
+                </div>
+              </div>
+            </div>
+          </div>
+    <script src="index.js"></script>
+    </body>
+    
+</html>
+
